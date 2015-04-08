@@ -1,10 +1,6 @@
-require 'sinatra' 
+require 'sinatra'
 
 get '/' do 
-	erb :index
-end 
-
-get '/' do 
-	@crm_app_name = "My CRM"
+	"Main Menu"
 	erb :index
 end
