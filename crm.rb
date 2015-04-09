@@ -1,5 +1,6 @@
 require_relative 'contacts'
 require_relative 'rolodex'
+
 require 'sinatra'
 
 $rolodex= Rolodex.new
@@ -15,6 +16,10 @@ end
 
 get '/contacts/new' do 
 	erb :new_contact
+end
+
+get '/contacts/new/cool' do 
+	erb :cool
 end
 
 post '/contacts' do
